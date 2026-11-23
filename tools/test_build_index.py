@@ -90,7 +90,7 @@ def main():
         change(bad)
         check(build_index.check_document(bad, config) != [], what)
 
-    # Superseded markers (Droidtop/tracker#887): every old key points at the current root, from catalog.json.
+    # Superseded markers (mytop-project/tracker#887): every old key points at the current root, from catalog.json.
     marked = dict(config, superseded=["d" * 64, "a" * 64])
     check(build_index.superseded_markers(marked, "a" * 64) == [{"keySha256": "d" * 64, "by": "a" * 64}],
           "a superseded key points at the current root, and the current root is never marked")

@@ -14,7 +14,7 @@ certificate in x5c, issued by the catalog root (catalog-root.pub, public). The
 leaf names urn:droidtop:origin:<origin> and, if it names plugins, the manifest's
 id; the manifest is under the catalog's origin (ids <origin>.<name>).
 Each release is listed with its channel (`stream`, as droidtop-platforms' generator does,
-Droidtop/tracker#179): a release is "stable"; a pre-release is "unstable" when its tag is
+mytop-project/tracker#179): a release is "stable"; a pre-release is "unstable" when its tag is
 `plugin-unstable*` or `plugin-build*` (the per-push builds), and "testing" otherwise. The index keeps
 the newest 5 stable, 3 testing and 3 unstable releases per plugin. Each plugin carries the
 `category` of its newest release's signed manifest, when it is one droidtop knows.
@@ -333,7 +333,7 @@ def load_root(config):
 
 def superseded_markers(config, current):
     """catalog.json `superseded`: the keys this catalog used before, each marked as superseded by the current root
-    (Droidtop/tracker#887). The owner, 2026-11-05: "Every key is superceded by the current key", and only the source
+    (mytop-project/tracker#887). The owner, 2026-11-05: "Every key is superceded by the current key", and only the source
     that published the marker counts for it. So every marker names the root this index is built with, and a later
     rotation only adds the replaced key's fingerprint here. The key block carries them, under the index signature."""
     return [{"keySha256": old, "by": current} for old in config.get("superseded", []) if old != current]

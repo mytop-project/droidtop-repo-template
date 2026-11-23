@@ -1,11 +1,11 @@
 # droidtop plugin catalog template
 
-A template for publishing your own catalog of [droidtop](https://github.com/Droidtop/droidtop) plugins. A catalog is one
+A template for publishing your own catalog of [droidtop](https://github.com/mytop-project/droidtop) plugins. A catalog is one
 `index.json` file in a public GitHub repository. droidtop reads it, shows people your catalog's name, disclaimer and keys,
 and lists your plugins once they accept. This repository builds and signs that file for you.
 
 Press **Use this template** to make your own copy, then follow [Set it up](#set-it-up). The plugins themselves live in
-their own repositories; [droidtop-plugin-template](https://github.com/Droidtop/droidtop-plugin-template) is the
+their own repositories; [droidtop-plugin-template](https://github.com/mytop-project/droidtop-plugin-template) is the
 template for those.
 
 > ## Disclaimer

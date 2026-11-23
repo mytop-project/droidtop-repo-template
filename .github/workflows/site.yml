@@ -1,6 +1,6 @@
 # Builds this catalog's web page from the committed index.json and deploys it with GitHub Pages:
 #   https://<owner>.github.io/<repo>/
-# tools/site/ is a copy of the generator in Droidtop/droidtop.github.io (generator/), the way
+# tools/site/ is a copy of the generator in mytop-project/droidtop.github.io (generator/), the way
 # tools/build_index.py is a copy of droidtop-platforms' script. The page opens with this catalog's
 # disclaimer. It lives in this catalog's organisation, not in droidtop's. Turn on GitHub Pages (Settings > Pages >
 # Source: GitHub Actions) for it to deploy.
@@ -28,7 +28,7 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  REGISTRY: https://raw.githubusercontent.com/Droidtop/droidtop/main/plugin-host/src/main/kotlin/dev/droidtop/pluginhost/PluginPermissions.kt
+  REGISTRY: https://raw.githubusercontent.com/mytop-project/droidtop/main/plugin-host/src/main/kotlin/dev/droidtop/pluginhost/PluginPermissions.kt
 
 jobs:
   build:
